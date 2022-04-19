@@ -6,6 +6,7 @@ static const unsigned int snap      = 16;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 /* static const int user_bh            = 18;    */    /* 0 means that dwm will calculate bar height, >= 1 means dwm will user_bh as bar height */
+static const char panel[][20]       = { "xfce4-panel", "Xfce4-panel" }; /* name & cls of panel win */
 static const char *fonts[]          = { "monospace:size=10" };
 static const char dmenufont[]       = "monospace:size=10";
 static const char col_gray1[]       = "#222222";
@@ -36,6 +37,7 @@ static const Rule rules[] = {
 	{ NULL,       NULL,      "sppod",     0,            1,           -1,       'a' },
 	{ NULL,      "Steam",     NULL,       0,            0,           -1,       'z' },
  	{ NULL,	     "keepassxc", NULL,	      0,	    1,           -1,       'x' },
+	{ panel[1],   NULL,       NULL,       (1 << 9) - 1, 1,           -1 },
  /*	{ NULL,	     "Modded Slay the Spire", NULL,	    0,	    1,           -1,       0 }, */
 	/* class      instance    title       tags mask     isfloating   monitor */
 /*  	{ "Gimp",     NULL,       NULL,           0,            1,           -1 },
