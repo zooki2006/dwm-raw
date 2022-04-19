@@ -126,7 +126,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_m,  	   spawn,          SHCMD("nyrna -t")}, 
 	{ MODKEY|ShiftMask,             XK_m,  	   spawn,          {.v = nyrna } }, 
 	{ MODKEY,                       XK_e,      spawn,          {.v = webcmd } },
-	{ MODKEY,                       XK_Pause,  spawn,          {.v = powercmd} },
+/*	{ MODKEY,                       XK_Pause,  spawn,          {.v = powercmd} }, */
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 /*	{ MODKEY,                       XK_z,      spawn,          {.v = steamcmd } }, */
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
